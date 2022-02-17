@@ -1,0 +1,73 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body { 
+    font-family: 'Outfit', sans-serif;;
+}
+.qr-main-container { 
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(212, 45%, 89%);
+    position: relative;
+}
+
+.qr-section-father {
+    max-width: 300px;
+    height: 450px;
+    padding: 15px;
+    display: grid;
+    grid-template-rows: 2fr 2fr;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.qr-section-father img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.qr-main-section {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.qr-main-section--title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+}
+
+.qr-main-section--p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: hsl(220, 15%, 55%);
+}
+
+@media (max-width: 425px) {
+    .qr-section-father {
+        width: 460px;
+        
+    }
+}
+
+@media (max-width:596px) and (min-width: 425px) {
+    .qr-section-father {
+        width: 460px;
+    }
+}
+
